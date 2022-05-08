@@ -30,7 +30,8 @@
         <p id="today" class="mb-0" style="width: 160px;"></p>
       </div>
       <div class="d-flex align-items-center text-right">
-        <p class="mb-0" style="width: 160px;">Settings <span class="mdi mdi-tune"></span></p>
+        <p class="mb-0" hidden onclick="" id="settingsBtn" style="width: 160px;">Settings <span
+            class="mdi mdi-tune"></span></p>
       </div>
     </nav>
 
@@ -68,10 +69,12 @@
       <div class="d-flex flex-column text-center">
         <h1>Settings</h1>
         <div id="setBlinds">
-          <div class="d-flex flex-row">
+          <div class="d-flex flex-row align-items-center">
             <h3>Blinds</h3>
-            <button type="button" id="" onclick="addBlind()" class="btn btn-outline-dark btn-lg">add</button>
-            <button type="button" id="" onclick="deleteBlind()" class="btn btn-outline-dark btn-lg">delete</button>
+            <button type="button" id="" onclick="addBlind()" class="btn btn-outline-primary btn-sm ml-2"><span
+                class="mdi mdi-plus"></span></button>
+            <button type="button" id="" onclick="deleteBlind()" class="btn btn-outline-danger btn-sm ml-2"><span
+                class="mdi mdi-minus"></span></button>
           </div>
           <div id="blindZoneSetting" class="d-flex flex-row flex-wrap justify-content-center">
           </div>
