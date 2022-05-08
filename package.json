@@ -1,0 +1,29 @@
+{
+    "version": "1.0.0",
+    "name": "PokerBlindQC",
+    "app-name": "PokerBlindQC",
+    "package-name": "webview",
+    "project-type": "webview",
+    "icon": "./assets/icon/icon.png",
+    "dist-path": "./dist",
+    "screenOrientation": "landscape",
+    "permission": [
+        "android.permission.INTERNET"
+    ],
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start:dev": "node .",
+        "build": "androidjs build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@mdi/font": "^6.6.96",
+        "androidjs": "^2.0.2"
+    },
+    "project-name": "PokerBlindQC",
+    "theme": {
+        "fullScreen": true
+    }
+}
