@@ -30,7 +30,7 @@
         <p id="today" class="mb-0" style="width: 160px;"></p>
       </div>
       <div class="d-flex align-items-center text-right">
-        <p class="mb-0" hidden onclick="" id="settingsBtn" style="width: 160px;">Settings <span
+        <p class="mb-0" hidden onclick="settingModal.show()" id="settingsBtn" style="width: 160px;">Settings <span
             class="mdi mdi-tune"></span></p>
       </div>
     </nav>
@@ -86,12 +86,24 @@
 
   </div>
 
-  <script type="text/javascript" src="../assets/script.js"></script>
+  <div id="settingsModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Are you sure to restart timer ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="settingModal.hide()">Close</button>
+          <button type="button" class="btn btn-danger" onclick="reset()">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../assets/jquery-3.3.1.slim.min.js"></script>
   <script src="../assets/popper.min.js"></script>
   <script src="../assets/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  </script>
+  <script type="text/javascript" src="../assets/script.js"></script>
 </body>
 
 </html>
