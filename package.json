@@ -6,7 +6,6 @@
     "project-type": "webview",
     "icon": "./assets/icon/icon.png",
     "dist-path": "./dist",
-    "screenOrientation": "landscape",
     "permission": [
         "android.permission.INTERNET"
     ],
