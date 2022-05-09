@@ -19,7 +19,8 @@
     "license": "ISC",
     "dependencies": {
         "@mdi/font": "^6.6.96",
-        "androidjs": "^2.0.2"
+        "androidjs": "^2.0.2",
+        "nosleep.js": "^0.12.0"
     },
     "project-name": "PokerBlindQC",
     "theme": {

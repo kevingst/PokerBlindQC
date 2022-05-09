@@ -79,8 +79,16 @@
           </div>
           <div id="blindZoneSetting" class="d-flex flex-row flex-wrap justify-content-center">
           </div>
+          <div id="setNextBlindTime">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <div class="d-flex flex-row align-items-center">
+                <h3>Next blind time:</h3>
+                <input id="nextBlindTime" type="text" class="form-control m-2" style="max-width: 100px;">min
+              </div>
+            </div>
+          </div>
         </div>
-        <button type="button" id="" onclick="loadConfig()" class="btn btn-outline-dark btn-lg">Start</button>
+        <button type="button" id="" onclick="loadConfig()" class="btn btn-outline-success btn-lg">Start</button>
 
       </div>
     </div>
@@ -122,7 +130,8 @@
   <script src="../assets/jquery-3.3.1.slim.min.js"></script>
   <script src="../assets/popper.min.js"></script>
   <script src="../assets/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/script.js"></script>
+  <script type="text/javascript" src="../node_modules/nosleep.js/dist/NoSleep.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
 </body>
 
 </html>
