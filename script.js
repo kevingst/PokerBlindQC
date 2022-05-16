@@ -1,5 +1,5 @@
 // Config
-var smallBlind = [1000, 2000, 3000, 5000, 7000, 10000, 15000, 20000, 30000]
+var smallBlind = [2000, 4000, 6000, 10000, 14000, 20000, 30000, 40000, 60000]
 var nextBlindTime = 10
 
 // Var
@@ -143,7 +143,7 @@ function toHHMM(seconds) {
   if (hours < 10) { hours = "0" + hours; }
   if (minutes < 10) { minutes = "0" + minutes; }
   if (seconds < 10) { seconds = "0" + seconds; }
-  var time = hours + ':' + minutes;
+  var time = hours + ':' + minutes + ':' + seconds;
   return time;
 }
 
@@ -172,7 +172,7 @@ function updateBlindsHTML(resetBlind) {
   } else {
     currentBlind++
   }
-  var nextBlinds = smallBlind[currentBlind] + '/' + smallBlind[currentBlind] * 2
+  var nextBlinds = smallBlind[currentBlind] / 2 + '/' + smallBlind[currentBlind]
   document.getElementById("blinds").innerHTML = nextBlinds
   document.getElementById('blindInModal').innerHTML = nextBlinds
 }
